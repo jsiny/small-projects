@@ -18,17 +18,32 @@ players.times do |player|
   treasures[gets.chomp] = 0
 end  
 
+# Visual separator to enhance user interface
+def linebreak
+  puts "----------------------------------------------------------------------------"
+end
+
 # There are 3 rounds in this game.
 # At each round, the treasures picked up before are hidden away safely and 
 # do not burden the divers anymore.
 
 3.times do |element|
   
-  puts "--------------------------------------"
-  puts "ROUND ##{element+1} HAS STARTED"
-  puts "--------------------------------------"
+  loop do 
+    puts "Do you want to start round ##{element+1}? Y/N"
+    answer = gets.chomp
+    if answer == "Y"
+      break
+    end
+  end
   
-  oxygen = 25
+  linebreak
+  linebreak
+  puts "ROUND ##{element+1} HAS STARTED"
+  linebreak
+  linebreak
+    
+  oxygen = 3
   
   # The treasures from previous rounds are removed.
   # Each diver starts its dive with 0 treasure.
@@ -45,7 +60,8 @@ end
       oxygen -= treasure
       
       if oxygen <= 0
-        puts "No more oxygen left! All the divers still in the water have drowned."
+        puts "NO MORE OXYGEN LEFT! All the divers still in the water have drowned."
+        linebreak
         break
       
       else
@@ -54,11 +70,17 @@ end
         choice = gets.chomp
         treasures[player] += 1 if choice == "Y"
         p treasures
+        
+        sum = treasures.values.inject(0){|sum,x| sum + x }
+        puts "The total amount of treasures taken from the sea this round amounts to: #{sum}."
+        linebreak
       end
     end
  end
 end
 
-puts "--------------------------------------"
+linebreak
+linebreak
 puts "THE GAME HAS ENDED"
-puts "--------------------------------------"
+linebreak
+linebreak
