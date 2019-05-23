@@ -43,7 +43,7 @@ end
   linebreak
   linebreak
     
-  oxygen = 3
+  oxygen = 25
   
   # The treasures from previous rounds are removed.
   # Each diver starts its dive with 0 treasure.
