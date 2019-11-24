@@ -16,8 +16,8 @@ def roman_to_int(s)
   end.sum
 end
 
-p roman_to_int('III')     # == 3
-p roman_to_int('IV')      # == 4
-p roman_to_int('IX')      # == 9
-p roman_to_int('LVIII')   # == 58
-p roman_to_int('MCMXCIV') # == 1994
+p roman_to_int('III')     == 3
+p roman_to_int('IV')      == 4
+p roman_to_int('IX')      == 9
+p roman_to_int('LVIII')   == 58
+p roman_to_int('MCMXCIV') == 1994
