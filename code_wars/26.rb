@@ -111,5 +111,6 @@ def find_primes(first, last)
   (first..last).select { |int| prime?(int) }.join(', ')
 end
 
-p find_primes(3, 10)# == '3, 5, 7'
-
+p find_primes(3, 10) == '3, 5, 7'
+p find_primes(3, 7)  == '3, 5, 7'
+p find_primes(8, 9)  == ''
