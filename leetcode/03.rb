@@ -30,7 +30,7 @@ def length_of_longest_substring(s)
     if current.include?(char)
       longest = [longest, current.size].max
       index = current.index(char) + 1
-      current = current[index..-1]
+      current = current[index..-1] # remove first letters until duplicate value
     end
     current << char
   end
@@ -45,3 +45,4 @@ p length_of_longest_substring('pwwkew')   == 3  # 'wke'
 p length_of_longest_substring(' ')        == 1
 p length_of_longest_substring('au')       == 2
 p length_of_longest_substring('aab')      == 2
+p length_of_longest_substring('Nathan is trying') == 8 # 's trying'
