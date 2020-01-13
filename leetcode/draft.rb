@@ -42,7 +42,7 @@ p anagrams?('HI', 'ih')            == true
 
 # -----------------------------
 
-# Perfect Number Checker: "Create a function that tests whether or not an integer is a perfect number. A perfect number is a number that can be written as the sum of its factors, excluding the number itself. For example, 6 is a perfect number since 1+2+3=6, where 1, 2, and 3 are all factors of 6." Examples: 
+# Perfect Number Checker: "Create a function that tests whether or not an integer is a perfect number. A perfect number is a number that can be written as the sum of its factors, excluding the number itself. For example, 6 is a perfect number since 1+2+3=6, where 1, 2, and 3 are all factors of 6."
 
 def check_perfect(num)
   multiples_sum = 0
@@ -59,9 +59,3 @@ p check_perfect(6)    == true
 p check_perfect(28)   == true
 p check_perfect(496)  == true 
 p check_perfect(12)   == false
-
-# sum of multiples = 0
-# iterate thru int from 1 to num/2 
-# - add to sum of multiples if num % i = 0
-# - break if sum > num
-# sum == num ?
