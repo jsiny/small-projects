@@ -6,14 +6,10 @@ These constraints were meant to push me to think creatively. As such, I've resor
 
 My goal here was to replicate this FDA Nutrition Facts Label (for Macaroni & Cheese):
 
-<p align="center">
-  <img src="/screenshots/original_label.jpg">
-</p>
+![Original Label](/screenshots/original_label.jpg)
 
 And here's my version:
 
-<p align="center">
-  <img src="/screenshots/my_label.png">
-</p>
+![My version](/screenshots/my_label.png)
 
 *Sidenote:* I've chosen not to download any new font. My goal was not pixel perfection but rather to re-create a similar label with comparable aspect.
