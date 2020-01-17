@@ -1,0 +1,185 @@
+/* ------ ALL PAGE ------- */
+
+html {
+  font-size: 28px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+/* Create Inner Box */
+article {
+  width: 680px;
+  border: 2px solid black;
+  box-sizing: border-box;
+  padding: 10px 15px 15px 15px;
+}
+
+/* ------ ALL TABLES ------- */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td, dl, h1, h2, p {
+  padding: 0;
+  margin: 0;
+}
+
+td,
+tbody th {
+  padding: 2px 0;
+}
+
+/* ------ HEADER ------- */
+
+/* Nutrition Facts Typography */
+h1 {
+  font-size: 2rem;
+}
+
+p + p {
+  margin-bottom: 5px;
+}
+
+/* Amount per Serving Typography */
+h2 {
+  padding: 10px 0;
+  border-top: black solid 1.07rem;
+  border-bottom: black solid 1px;
+  font-size: 1rem;
+}
+
+/* Position and typography for Calories */
+
+header dl {
+  padding: 5px 0;
+}
+
+header dt {
+  font-weight: bold;
+}
+
+header dl + dl * {
+  font-weight: normal;
+}
+
+header dl + dl {
+  text-align: right;
+  float: right;
+}
+
+/* ------ FIRST TABLE ------- */
+
+/* Regular horizontal border */
+td, th {
+  border-top: 1px solid black;
+}
+
+table {
+  border-bottom: 1px solid black;
+}
+
+/* "Daily Value" thead */
+header + table thead th {
+  border-top: black solid 15px;
+  text-align: right;
+  padding: 11px 1px 1px 0;
+  font-weight: bold;
+}
+
+sup {
+  vertical-align: 3px;
+}
+
+/* Align left most text */
+header + table {
+  text-align: left;
+}
+
+th {
+  font-weight: 400;
+}
+
+/* Make the nutrient and quantity close */
+dl, dt, dd {
+  display: inline-block;
+}
+
+dd {
+  margin-left: 0;
+}
+
+/* Typography Percentages Daily Value  */
+header + table td:nth-child(2) + td,
+th + td {
+  font-weight: bold;
+  text-align: right;
+}
+
+/* Make the nutrients name bold */
+th dt {
+  font-weight: bold;
+}
+
+/* Indent sub-nutrients */
+header + table td.indent {
+  border-top: none;  
+  width: 1rem;
+}
+
+/* Handles third horizontal bar */
+header + table tbody:first-of-type {
+  border-bottom: solid black 20px;
+} 
+
+/* Align right Vitamin Percentages */
+header + table tbody + tbody td + td {
+  text-align: right;
+}
+
+/* ------ ASIDE ------- */
+
+aside {
+  font-size: 0.9rem;
+  margin-top: 14px;
+  padding-left: 19.5px;
+  text-indent: -19.5px;
+}
+
+/* ------ SECOND TABLE ------- */
+
+aside + table {
+  margin-top: 15px;
+  font-size: 0.8rem;
+  text-align: left;
+  border-bottom: none;
+}
+
+aside + table th {
+  border-top: none;
+  border-bottom: 1px solid black;
+  padding-bottom: 1px;
+}
+
+aside + table *:first-of-type {
+  width: 240px;
+}
+
+aside + table td {
+  width: 134px;
+  border: none;
+}
+
+td.indent {
+  text-indent: 1.2rem;
+}
+
+/* Correct imperfection for 'Less than' column */
+aside + table td:nth-child(2) {
+  text-indent: -1px;
+}
+
+/* Correct imperfection for 2 last headers */
+aside + table th:nth-last-child(-n+2) {
+  text-indent: 1px;
+}
