@@ -13,7 +13,7 @@ My goal here was to replicate this FDA Nutrition Facts Label (for Macaroni & Che
 And here's my version:
 
 <p align="center">
-  <img src="/screenshots/my_label.jpg">
+  <img src="/screenshots/my_label.png">
 </p>
 
 *Sidenote:* I've chosen not to download any new font. My goal was not pixel perfection but rather to re-create a similar label with comparable aspect.
