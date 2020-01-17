@@ -6,10 +6,16 @@ These constraints were meant to push me to think creatively. As such, I've resor
 
 My goal here was to replicate this FDA Nutrition Facts Label (for Macaroni & Cheese):
 
-![Original Label](https://github.com/jsiny/small-projects/tree/master/screenshots/original_label.jpg)
+<p align="center">
+  <img src="https://github.com/jsiny/small-projects/tree/master/screenshots/original_label.jpg">
+</p>
 
 And here's my version:
 
-![My version](https://github.com/jsiny/small-projects/tree/master/nutrition_facts/my_label.png)
+<p align="center">
+  <img src="https://github.com/jsiny/small-projects/tree/master/screenshots/my_label.png">
+</p>
+
+Feel free to inspect [my CSS file](https://github.com/jsiny/small-projects/tree/master/nutrition_facts/nutrition_facts.css)!
 
 *Sidenote:* I've chosen not to download any new font. My goal was not pixel perfection but rather to re-create a similar label with comparable aspect.
