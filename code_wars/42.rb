@@ -3,7 +3,7 @@
 SECONDS_IN_AN_HOUR = 3600
 SECONDS_IN_A_DAY = 24 * SECONDS_IN_AN_HOUR
 SECONDS_IN_A_YEAR = 365 * SECONDS_IN_A_DAY
-TIME = %w[year day hour minute second]
+TIME = %w[year day hour minute second].freeze
 
 def format_duration(sec)
   return 'now' if sec.zero?
@@ -37,7 +37,7 @@ end
 
 # After studying best katas
 
-TIME = %w[year day hour minute second]
+TIME = %w[year day hour minute second].freeze
 
 def format_duration(sec)
   return 'now' if sec.zero?
@@ -47,15 +47,15 @@ def format_duration(sec)
   d, h = h.divmod(24)
   y, d = d.divmod(365)
 
-  *first, last = TIME.zip([y, d, h, m, s]).reject { |unit, n| n.zero? }
+  *first, last = TIME.zip([y, d, h, m, s]).reject { |_, n| n.zero? }
                      .map { |unit, n| n > 1 ? "#{n} #{unit}s" : "1 #{unit}" }
   
   first.empty? ? last : first.join(', ') + ' and ' + last
 end
 
-p format_duration(0)            == "now"
-p format_duration(62)           == "1 minute and 2 seconds"
-p format_duration(3662)         == "1 hour, 1 minute and 2 seconds"
-p format_duration(86401)        == "1 day and 1 second"
-p format_duration(15_731_080)   == "182 days, 1 hour, 44 minutes and 40 seconds"
-p format_duration(132_030_240)  == "4 years, 68 days, 3 hours and 4 minutes"
+p format_duration(0)            == 'now'
+p format_duration(62)           == '1 minute and 2 seconds'
+p format_duration(3662)         == '1 hour, 1 minute and 2 seconds'
+p format_duration(86_401)       == '1 day and 1 second'
+p format_duration(15_731_080)   == '182 days, 1 hour, 44 minutes and 40 seconds'
+p format_duration(132_030_240)  == '4 years, 68 days, 3 hours and 4 minutes'
