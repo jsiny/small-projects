@@ -20,7 +20,17 @@ def length_of_longest_substring(s)
   length
 end
 
-# Faster solutpion (not mine)
+# Faster solution (not mine)
+
+# create an empty current letters array
+# initialize a var at 0 to keep track of the longest substring so far
+# iterate over each character of the string:
+# - if the current letters array includes the current char:
+# -- reassign longest to the max between longest and current letters size
+# -- define the starting index of the new substring at the next letter after the duplicate
+# -- reassign current to start at the new starting index instead
+# - add the current char to the current letters array
+# return the highest value between the longest var or the size of the current letters
 
 def length_of_longest_substring(s)
   current = []
